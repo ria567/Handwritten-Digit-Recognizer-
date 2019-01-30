@@ -27,7 +27,6 @@ clf=DecisionTreeClassifier()
 
 xtrain=data[0:42000,1:]
 trainlabel=data[0:42000,0]
-xzzx
 clf.fit(xtrain,trainlabel)
 data=pd.read_csv("test.csv").as_matrix()
 xtest=data[0:28000,0:]
